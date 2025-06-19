@@ -4,7 +4,7 @@
  */
 
 configuration {
-    modi: "drun,run,window,ssh";
+    modi: "drun,window";
     show-icons: true;
     display-drun: "Aplicaciones";
     display-run: "Comandos";
