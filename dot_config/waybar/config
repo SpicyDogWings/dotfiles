@@ -21,7 +21,7 @@
       "tooltip-format": "Menú",
       "on-click": "rofi -show drun",
       "on-click-right": "rofi -show window",
-      "on-click-midle": "waybar"
+      "on-click-middle": "~/.local/bin/powerMenu.sh",
     },
     "hyprland/workspaces": {
       "on-click": "activate",

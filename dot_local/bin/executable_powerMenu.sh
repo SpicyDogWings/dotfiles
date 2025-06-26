@@ -7,10 +7,6 @@ options["   Power Off"]="systemctl poweroff"
 options["   Reboot"]="systemctl reboot"
 options["   Lock"]="hyprlock"
 options["   Logout"]="systemctl --user exit" # For Hyprland
-#options["   Logout"]="hyprctl dispatch exit 0" # For Hyprland
-#options[" Lock"]="loginctl lock-session"     # or 'swaylock' if you use it, or 'hyprlock'
-#options["󰜉 Hibernate"]="systemctl hibernate"  # Check if hibernate is configured on your system
-#options[" Suspend"]="systemctl suspend"
 
 menu_choices=""
 for option in "${!options[@]}"; do
