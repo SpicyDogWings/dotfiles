@@ -1,0 +1,90 @@
+
+* {
+  color-1:                      #8F87F1;
+  color-2:                      #C68EFD;
+  color-3:                      #E9A5F1;
+  color-4:                      #FED2E2;
+
+  color-5:                      #1A0428;
+  color-6:                      #3A2448;
+  color-7:                      #2A1438;
+  color-8:                      #ffead3;
+
+  color-9:                      #8F87F133;
+
+  border-radius:                15px;
+  border-radius-inside:         6px;
+  spaicing:                     10px;
+  generic-background:           transparent;
+
+  gradient-1:                   linear-gradient(45deg, #8F87F1, #C68EFD);
+  gradient-2:                   linear-gradient(45deg, #C68EFD, #E9A5F1);
+
+  windows-background:           @color-5;
+  windows-border:               @color-3;
+
+  mainbox-radius:               @border-radius-inside;
+  mainbox-padding:              0px;
+  mainbox-background:           @generic-background;
+
+  listview-lines:               9;
+  listview-columns:             1;
+  listview-layout:              horizontal;
+  listview-padding:             5px;
+  listview-reverse:             false;
+  listview-background:          @generic-background;
+  listview-horizontal-align:    0.5;
+  listview-vertical-align:      0.5;
+
+  elements-background:          @generic-background;
+  elements-text:                @color-1;
+  elements-layout:              vertical;
+  elements-radius:              @border-radius-inside;
+  elements-selected-background: @color-9;
+  elements-selected-text:       @color-4;
+  elements-padding:             20px;
+  elements-width:               150px;
+  elements-icon-size:           1.5em;
+
+  inputbar-background:          @color-6;
+  inputbar-text:                @color-1;
+  inputbar-radius:              @border-radius-inside;
+  inputbar-border:              0px;
+  inputbar-padding:             0px;
+  inputbar-margin:              5px;
+
+  prompt-text:                  @color-6;
+  prompt-padding:               8px 18px 5px 15px;
+  prompt-margin:                5px 10px 5px 0px;
+  prompt-radius:                @border-radius-inside;
+  prompt-background:            @gradient-1;
+
+  entry-padding:                5px 10px;
+  entry-margin:                 5px 10px 5px 0px;
+  entry-text:                   @color-8;
+  entry-background:             @generic-background;
+  entry-placeholder-text:       @color-1;
+  entry-placeholder:            "Buscar...";
+
+  button-background:            @color-6;
+  button-text:                  @color-8;
+  button-border:                0px;
+  button-radius:                @border-radius-inside;
+  button-padding:               10px 20px;
+  button-background-selected:   @gradient-2;
+  button-text-selected:         @color-7;
+
+
+
+
+
+    background-color: #000000;
+    background-alt:   #111111;
+
+    foreground:       #dddddd;
+
+    border-color:     #222222;
+
+    accent:           #eeeeee;
+    blue-dark:        #888888;
+}
