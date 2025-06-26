@@ -24,43 +24,43 @@
         {
           "uuid": "open_with_lazygit.nemo_action",
           "type": "action",
-          "user-label": null,
-          "user-icon": "git",
+          "user-label": "Abrir con Lazygit",
+          "user-icon": "github-desktop",
           "accelerator": null
         },
         {
           "uuid": "open_in_lazygit.nemo_action",
           "type": "action",
           "user-label": null,
-          "user-icon": "git",
+          "user-icon": "github-desktop",
           "accelerator": null
         },
         {
           "uuid": "add_this_to_chezmoi.nemo_action",
           "type": "action",
           "user-label": null,
-          "user-icon": "git",
+          "user-icon": "com.github.GradienceTeam.Gradience",
           "accelerator": null
         },
         {
           "uuid": "add_to_chezmoi.nemo_action",
           "type": "action",
           "user-label": null,
-          "user-icon": "git",
+          "user-icon": "com.github.GradienceTeam.Gradience",
           "accelerator": null
         },
         {
           "uuid": "forget_this_to_chezmoi.nemo_action",
           "type": "action",
           "user-label": null,
-          "user-icon": "cancel",
+          "user-icon": "trashcan_full",
           "accelerator": null
         },
         {
           "uuid": "forget_to_chezmoi.nemo_action",
           "type": "action",
           "user-label": null,
-          "user-icon": "cancel",
+          "user-icon": "trashcan_full",
           "accelerator": null
         }
       ]
@@ -106,7 +106,7 @@
           "uuid": "open_with_kitty.nemo_action",
           "type": "action",
           "user-label": null,
-          "user-icon": "terminal",
+          "user-icon": "kitty",
           "accelerator": null
         },
         {
