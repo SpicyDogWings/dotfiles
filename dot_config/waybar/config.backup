@@ -1,0 +1,177 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin": "10 50",
+  "spacing": 10,
+  "reload_style_on_change": true,
+  "modules-left": [
+    "custom/logo",
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "hyprland/language",
+    "cpu",
+    "memory",
+    "disk",
+    "network",
+    "wireplumber",
+    "custom/microphone",
+    "custom/pacman",
+    "backlight",
+    "battery",
+    "custom/power"
+  ],
+  "custom/logo": {
+    "format": "  ",
+    "tooltip": false,
+    "on-click": "rofi -show drun"
+  },
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "format": "{name} {icon}",
+    "format-icons": {
+      "default": "",
+      "1": "",
+      "2": "󰖟",
+      "3": "",
+      "4": "󰦭",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "urgent": "",
+    },
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
+  },
+  "hyprland/language": {
+    "format": "{short}"
+  },
+  "cpu": {
+  	"interval": 1,
+  	"format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% ",
+  	"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "on-click-right": "fullscreen",
+    "icon-theme": "WhiteSur",
+    "icon-size": 25,
+    "tooltip-format": "{title}"
+  },
+  "memory": {
+    "interval": 5,
+    "format": "󰍛 {}%",
+    "max-length": 10
+  },
+  "disk": {
+	  "interval": 30,
+	  "format": "{percentage_free}% free on {path}",
+  }, 
+  "clock": {
+    "tooltip-format": "{calendar}",
+    "format-alt": "  {:%a, %d %b %Y}",
+    "format": "  {:%I:%M %p}"
+  },
+  "network": {
+    "format-wifi" : "{icon}",
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    "format-ethernet": "󰀂",
+	  "format-alt" : "󱛇",
+    "format-disconnected" : "󰖪",
+	  "tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	  "tooltip-format-disconnected": "Disconnected",
+	  "on-click": "~/.config/rofi/wifi/wifi.sh &",
+    "on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
+	  "interval": 5,
+	  "nospacing": 1,
+  },
+  "wireplumber": {
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "󰂰",
+    "nospacing": 1,
+    "tooltip-format": "Volume : {volume}%",
+    "format-muted": "󰝟",
+    "format-icons": {
+        "headphone": "",
+        "default": ["󰖀","󰕾",""]
+    },
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "scroll-step": 1
+  },
+  "custom/microphone": {
+    "format": "{}",
+    "return-type": "json",
+    "exec": "~/.local/bin/mic_toggle.sh",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%-",
+    "interval": 1,
+    "tooltip": true
+  },
+  "backlight": {
+  	"device": "intel_backlight",
+  	"format": "{percent}% {icon}",
+  	"format-icons": ["", ""]
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": {
+      "charging": [
+        "󰢜",
+        "󰂆",
+        "󰂇",
+        "󰂈",
+        "󰢝",
+        "󰂉",
+        "󰢞",
+        "󰂊",
+        "󰂋",
+        "󰂅"
+      ],
+      "default": [
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+      ]
+    },
+    "format-full": "Charged ",
+    "interval": 5,
+    "states": {
+      "warning": 30,
+      "critical": 10
+    },
+    "tooltip": false
+  },
+  "custom/power": {
+	"format" : "⏻ ",
+		"tooltip": false,
+    "on-click": "~/.local/bin/powerMenu.sh",
+		//"menu": "on-click",
+		//"menu-file": "~/.config/waybar/power_menu.xml",
+		//"menu-actions": {
+		//	"Apagar": "shutdown",
+		//	"Reiniciar": "reboot",
+		//	//"suspend": "systemctl suspend",
+		//	//"hibernate": "systemctl hibernate",
+		//},
+},
+}

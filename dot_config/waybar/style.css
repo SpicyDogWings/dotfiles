@@ -1,129 +1,80 @@
-@import "mocha.css";
+@import "cassette01.css";
 
 * {
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: SpaceMono Nerd Font, sans;
-  font-size: 13px;
+  font-family: DepratureMono Nerd Font, sans;
+  font-size: 15px;
 }
 
 window#waybar {
-  background-color: transparent;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-window#waybar.hidden {
-  opacity: 0.5;
+  background-color: @window-background;
+  border-radius: 16px;
 }
 
-#workspaces button,
-#clock,
+#custom-logo,
+#workspaces,
+#language, 
+#clock{
+  margin: 0.5em 0.5em;
+}
+
+#custom-logo,
 #language,
-#cpu,
-#disk,
-#memory,
-#network,
-#wireplumber,
-#custom-microphone,
-#custom-pacman,
-#backlight,
-#battery,
-#custom-power {
-  border-radius: 8px;
-  margin: 5px 3px;
-  padding: 6px 12px;
-  background-color: @background;
-  color: @foreground;
+#clock,
+#workspaces button {
+  padding: 0.3em 1.3em 0.3em 1em;
+  border-radius: 10px;
 }
 
 #custom-logo {
-  padding: 0 7px;
-  margin: 0 20px 0 15px;
-  font-size: 15px;
-  color: @accent;
-  background-color: transparent;
+  padding: 0.3em 1.3em 0.3em 1em;
+  color: @custom-logo-text;
+  background: linear-gradient(45deg, @custom-logo-background-1, @custom-logo-background-2);
 }
 
 #workspaces {
-  background-color: transparent;
+  background: transparent; 
+  margin: 0.5em 0.5em;
 }
 #workspaces button {
-  all: initial;
-  padding: 6px 18px;
-  margin: 6px 3px;
-  border-radius: 4px;
-  background-color: @background;
-  color: @foreground;
-  transition: padding 0.2s ease-out;
-
-}
-#workspaces button.active {
-  color: @background;
-  background-color: @accent;
-  padding: 6px 30px;
+  margin: 0 0.2em;
+  padding: 0.3em 1.3em 0.3em 1em;
+  border-radius: 10px;
 }
 #workspaces button:hover {
-  box-shadow: inherit;
-  text-shadow: inherit;
-  color: @accent;
-  background-color: @background-hover;
+  background: @workspaces-button-hover-background;
 }
-#battery.warning,
-#battery.critical,
-#battery.urgent,
-#workspaces button.urgent {
-  background-color: @urgent;
-  color: @background;
-}
-#battery.charging {
-  background-color: @accent;
-  color: @background;
+#workspaces button.active {
+  padding: 0.3em 2.3em 0.3em 2em;
+  color: @workspaces-button-text;
+  background: linear-gradient(45deg, @workspaces-button-background-1, @workspaces-button-background-2);
+  transition:  all 0.2s;
 }
 
-#wireplumber {
-  padding-right: 18px;
-}
-#wireplumber.muted,
-#custom-microphone.muted {
-    background-color: @event;
-    color: @accent;
-}
-#custom-microphone {
-    padding: 0 10px;
-}
-#custom-microphone.error {
-    background-color: @error;
-    color: @background;
+#language {
+  background: @language-background;
 }
 
-#network {
-  padding-right: 17px;
-}
-
-#custom-power {
-  padding: 0 20px 0 25px;
-  margin-right: 30px;
-}
-
-menu {
-	background-color: #333446;
-  border-radius: 15px;
-  padding: 20px;
-}
-menuitem {
-	color: #eeeeee;
-  border-radius: 15px;
-  margin: 2px;
-  padding: 10px;
+#clock:hover {
+  color: @workspaces-button-text;
+  background: linear-gradient(45deg, @workspaces-button-background-1, @workspaces-button-background-2);
+  transition:  all 0.2s;
 }
 
 tooltip {
-  border-radius: 8px;
-  padding: 15px;
-  color: @background;
-  background-color: @accent;
+  border-radius: 10px;
+  background: linear-gradient(45deg, @workspaces-tooltip-background-1, @workspaces-tooltip-background-2);
+  color: @workspaces-tooltip-text;
 }
-tooltip label {
-  padding: 5px;
+
+menu {
+  padding: 0.8em;
+	color: @workspaces-menu-text;
+  background: linear-gradient(45deg, @workspaces-menu-background-1, @workspaces-menu-background-2);
+	border-radius: 12px;
+}
+menuitem {
+	border-radius: 10px;
 }
