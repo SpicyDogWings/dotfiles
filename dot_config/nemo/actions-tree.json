@@ -18,7 +18,7 @@
       "uuid": "Git",
       "type": "submenu",
       "user-label": "Git",
-      "user-icon": null,
+      "user-icon": "github-desktop",
       "accelerator": null,
       "children": [
         {
@@ -76,7 +76,7 @@
       "uuid": "Editar con",
       "type": "submenu",
       "user-label": "Editar con",
-      "user-icon": null,
+      "user-icon": "text-editor",
       "accelerator": null,
       "children": [
         {
@@ -99,7 +99,7 @@
       "uuid": "Abrir con",
       "type": "submenu",
       "user-label": "Abrir con",
-      "user-icon": null,
+      "user-icon": "folder",
       "accelerator": null,
       "children": [
         {
@@ -122,7 +122,7 @@
       "uuid": "Abrir en",
       "type": "submenu",
       "user-label": "Abrir en",
-      "user-icon": null,
+      "user-icon": "io.elementary.code",
       "accelerator": null,
       "children": [
         {
