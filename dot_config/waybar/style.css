@@ -46,12 +46,19 @@ window#waybar {
 #workspaces button:hover {
   background: @workspaces-button-hover-background;
 }
+#workspaces button.visible {
+  padding: 0.3em 2.3em 0.3em 2em;
+  color: @workspaces-button-visible-text;
+  background: @workspaces-button-visible-background;
+  transition:  all 0.2s;
+}
 #workspaces button.active {
   padding: 0.3em 2.3em 0.3em 2em;
   color: @workspaces-button-text;
   background: linear-gradient(45deg, @workspaces-button-background-1, @workspaces-button-background-2);
   transition:  all 0.2s;
 }
+
 
 #language {
   background: @language-background;

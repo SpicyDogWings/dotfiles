@@ -27,6 +27,8 @@
 @define-color workspaces-button-background-2 @color-4;
 @define-color workspaces-button-text @color-5;
 @define-color workspaces-button-hover-background @color-6;
+@define-color workspaces-button-visible-text @color-1;
+@define-color workspaces-button-visible-background @color-6;
 
 @define-color language-background @color-7;
 
