@@ -39,3 +39,9 @@
 @define-color workspaces-menu-background-1 @workspaces-tooltip-background-1;
 @define-color workspaces-menu-background-2 @workspaces-tooltip-background-2;
 @define-color workspaces-menu-text @color-4;
+
+@define-color backlight-slider-trough-background-1 @workspaces-menu-background-1;
+@define-color backlight-slider-trough-background-2 @workspaces-menu-background-2;
+@define-color backlight-slider-highlight-background-1 @workspaces-button-background-1;
+@define-color backlight-slider-highlight-background-2 @workspaces-button-background-2;
+

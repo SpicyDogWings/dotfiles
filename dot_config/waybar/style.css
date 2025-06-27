@@ -85,3 +85,27 @@ menu {
 menuitem {
 	border-radius: 10px;
 }
+
+#backlight-slider slider {
+    min-height: 20px;
+    min-width: 20px;
+    opacity: 0;
+    background: @color-5;
+    border-radius: 10px;
+    box-shadow: none;
+}
+#backlight-slider slider:active {
+    opacity: 1;
+    background: @color-1;
+}
+#backlight-slider trough {
+    min-height: 5px;
+    min-width: 100px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, @backlight-slider-trough-background-1, @backlight-slider-trough-background-2);
+}
+#backlight-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, @backlight-slider-highlight-background-1, @backlight-slider-highlight-background-2);
+}

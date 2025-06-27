@@ -12,6 +12,7 @@
     "modules-center": [
     ],
     "modules-right": [
+      "backlight/slider",
       "hyprland/language",
       "clock"
     ],
@@ -33,7 +34,8 @@
         "2": "󰖟",
         "3": "",
         "4": "",
-        "5": "󰦭"
+        "5": "󰦭",
+        "6": ""
       },
       "expand": true
     },
@@ -63,6 +65,13 @@
   	  	"on-scroll-up": "shift_up",
   	  	"on-scroll-down": "shift_down"
   	  }
+    },
+    "backlight/slider": {
+      "min": 1,
+      "max": 100,
+      "orientation": "horizontal",
+      "device": "intel_backlight",
+      "expand": true
     }
   },
 ]
