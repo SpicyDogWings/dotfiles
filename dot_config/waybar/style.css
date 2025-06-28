@@ -65,7 +65,6 @@ window#waybar {
   background: @language-background;
 }
 
-#battery:hover,
 #clock:hover {
   color: @workspaces-button-text;
   background: linear-gradient(45deg, @workspaces-button-background-1, @workspaces-button-background-2);
@@ -112,11 +111,12 @@ menuitem {
   background: linear-gradient(45deg, @backlight-slider-highlight-background-1, @backlight-slider-highlight-background-2);
 }
 
-#battery {
+#battery, #battery-normal {
   background: @battery-background;
 }
 #battery.warning,
 #battery.critical,
+#battery.full,
 #battery.charging {
   color: @workspaces-button-text;
 }
@@ -128,8 +128,20 @@ menuitem {
 }
 #battery.charging {
     background: linear-gradient(45deg, @battery-charging-background-1, @battery-charging-background-2);
+    animation: 2s ease-out 0s infinite alternate go-to;
 }
 #battery.full {
     background: linear-gradient(45deg, @battery-full-background-1, @battery-full-background-2);
 }
 
+@keyframes go-to {
+    1% {
+      background: linear-gradient(45deg, @animation-1, @animation-2);
+    }
+    50% {
+      background: linear-gradient(45deg, @animation-2, @animation-2);
+    }
+    100% {
+      background: linear-gradient(45deg, @animation-1, @animation-2);
+    }
+}

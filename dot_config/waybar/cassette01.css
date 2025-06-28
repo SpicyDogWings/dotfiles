@@ -19,6 +19,9 @@
 @define-color color-9 #FFC107;
 @define-color color-10 #D50B8B;
 
+@define-color animation-1 @color-1;
+@define-color animation-2 @color-4;
+
 @define-color window-background @color-5;
 
 @define-color custom-logo-background-1 @color-1;
@@ -55,4 +58,4 @@
 @define-color battery-charging-background-1 @color-1;
 @define-color battery-charging-background-2 @color-4;
 @define-color battery-full-background-1 @color-1;
-@define-color battery-full-background-2 @color-2;
+@define-color battery-full-background-2 @color-4;

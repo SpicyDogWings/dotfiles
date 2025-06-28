@@ -42,11 +42,12 @@
     },
     "battery": {
       "format": "{icon} {capacity}",
-      "format-alt": "󱐌 {power} | 󰚭 {time}",
-      "format-full": " Charged",
+      "format-full": " Charged {capacity}",
       "states": {
         "warning": 30,
-        "critical": 20
+        "critical": 20,
+        "normal": 95,
+        "full": 100
       },
       "format-icons": {
         "charging": [
@@ -74,7 +75,6 @@
           "󰁹"
         ]
       },
-      "format-full": "Charged ",
       "tooltip": false,
       "expand": true
     },
