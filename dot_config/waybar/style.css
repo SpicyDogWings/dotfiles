@@ -16,12 +16,14 @@ window#waybar {
 #custom-logo,
 #workspaces,
 #language, 
+#battery,
 #clock{
   margin: 0.5em 0.5em;
 }
 
 #custom-logo,
 #language,
+#battery,
 #clock,
 #workspaces button {
   padding: 0.3em 1.3em 0.3em 1em;
@@ -59,11 +61,11 @@ window#waybar {
   transition:  all 0.2s;
 }
 
-
 #language {
   background: @language-background;
 }
 
+#battery:hover,
 #clock:hover {
   color: @workspaces-button-text;
   background: linear-gradient(45deg, @workspaces-button-background-1, @workspaces-button-background-2);
@@ -87,25 +89,47 @@ menuitem {
 }
 
 #backlight-slider slider {
-    min-height: 20px;
-    min-width: 20px;
-    opacity: 0;
-    background: @color-5;
-    border-radius: 10px;
-    box-shadow: none;
+  min-height: 20px;
+  min-width: 20px;
+  opacity: 0;
+  background: @color-5;
+  border-radius: 10px;
+  box-shadow: none;
 }
 #backlight-slider slider:active {
-    opacity: 1;
-    background: @color-1;
+  opacity: 1;
+  background: @color-1;
 }
 #backlight-slider trough {
-    min-height: 5px;
-    min-width: 100px;
-    border-radius: 5px;
-    background: linear-gradient(45deg, @backlight-slider-trough-background-1, @backlight-slider-trough-background-2);
+  min-height: 5px;
+  min-width: 100px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, @backlight-slider-trough-background-1, @backlight-slider-trough-background-2);
 }
 #backlight-slider highlight {
-    min-width: 10px;
-    border-radius: 5px;
-    background: linear-gradient(45deg, @backlight-slider-highlight-background-1, @backlight-slider-highlight-background-2);
+  min-width: 10px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, @backlight-slider-highlight-background-1, @backlight-slider-highlight-background-2);
 }
+
+#battery {
+  background: @battery-background;
+}
+#battery.warning,
+#battery.critical,
+#battery.charging {
+  color: @workspaces-button-text;
+}
+#battery.warning {
+  background: linear-gradient(45deg, @battery-warning-background-1, @battery-warning-background-2);
+}
+#battery.critical {
+  background: linear-gradient(45deg, @battery-critical-background-1, @battery-critical-background-2);
+}
+#battery.charging {
+    background: linear-gradient(45deg, @battery-charging-background-1, @battery-charging-background-2);
+}
+#battery.full {
+    background: linear-gradient(45deg, @battery-full-background-1, @battery-full-background-2);
+}
+

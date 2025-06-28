@@ -16,6 +16,8 @@
 @define-color color-6 #3A2448;
 @define-color color-7 #2A1438;
 @define-color color-8 #ffead3;
+@define-color color-9 #FFC107;
+@define-color color-10 #D50B8B;
 
 @define-color window-background @color-5;
 
@@ -45,3 +47,12 @@
 @define-color backlight-slider-highlight-background-1 @workspaces-button-background-1;
 @define-color backlight-slider-highlight-background-2 @workspaces-button-background-2;
 
+@define-color battery-background @color-7;
+@define-color battery-warning-background-1 @color-2;
+@define-color battery-warning-background-2 @color-9;
+@define-color battery-critical-background-1 @color-2;
+@define-color battery-critical-background-2 @color-10;
+@define-color battery-charging-background-1 @color-1;
+@define-color battery-charging-background-2 @color-4;
+@define-color battery-full-background-1 @color-1;
+@define-color battery-full-background-2 @color-2;
