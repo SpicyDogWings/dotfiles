@@ -8,6 +8,18 @@
   font-size: 15px;
 }
 
+@keyframes go-to {
+    1% {
+      background: linear-gradient(45deg, @animation-1, @animation-2);
+    }
+    50% {
+      background: linear-gradient(45deg, @animation-2, @animation-2);
+    }
+    100% {
+      background: linear-gradient(45deg, @animation-1, @animation-2);
+    }
+}
+
 window#waybar {
   background-color: @window-background;
   border-radius: 16px;
@@ -17,7 +29,10 @@ window#waybar {
 #workspaces,
 #language, 
 #battery,
-#clock{
+#backlight,
+#wireplumber,
+#custom-microphone,
+#clock {
   margin: 0.5em 0.5em;
 }
 
@@ -25,6 +40,9 @@ window#waybar {
 #language,
 #battery,
 #clock,
+#backlight,
+#wireplumber,
+#custom-microphone,
 #workspaces button {
   padding: 0.3em 1.3em 0.3em 1em;
   border-radius: 10px;
@@ -87,6 +105,7 @@ menuitem {
 	border-radius: 10px;
 }
 
+#pulseaudio-slider slider,
 #backlight-slider slider {
   min-height: 20px;
   min-width: 20px;
@@ -95,16 +114,19 @@ menuitem {
   border-radius: 10px;
   box-shadow: none;
 }
+#pulseaudio-slider slider:active,
 #backlight-slider slider:active {
   opacity: 1;
   background: @color-1;
 }
+#pulseaudio-slider trough,
 #backlight-slider trough {
   min-height: 5px;
   min-width: 100px;
   border-radius: 5px;
   background: linear-gradient(45deg, @backlight-slider-trough-background-1, @backlight-slider-trough-background-2);
 }
+#pulseaudio-slider highlight
 #backlight-slider highlight {
   min-width: 10px;
   border-radius: 5px;
@@ -127,21 +149,42 @@ menuitem {
   background: linear-gradient(45deg, @battery-critical-background-1, @battery-critical-background-2);
 }
 #battery.charging {
-    background: linear-gradient(45deg, @battery-charging-background-1, @battery-charging-background-2);
-    animation: 2s ease-out 0s infinite alternate go-to;
+  background: linear-gradient(45deg, @battery-charging-background-1, @battery-charging-background-2);
+  animation: 2s ease-out 0s infinite alternate go-to;
 }
 #battery.full {
-    background: linear-gradient(45deg, @battery-full-background-1, @battery-full-background-2);
+  background: linear-gradient(45deg, @battery-full-background-1, @battery-full-background-2);
 }
 
-@keyframes go-to {
-    1% {
-      background: linear-gradient(45deg, @animation-1, @animation-2);
-    }
-    50% {
-      background: linear-gradient(45deg, @animation-2, @animation-2);
-    }
-    100% {
-      background: linear-gradient(45deg, @animation-1, @animation-2);
-    }
+#backlight {
+  color: @backlight-text;
+  background: @backlight-background;
 }
+
+#wireplumber {
+  color: @wireplumber-text;
+  background: @wireplumber-background;
+}
+#wireplumber.muted {
+  background: @wireplumber-muted-background;
+}
+
+#custom-microphone {
+  color: @microphone-text;
+  background: @microphone-background;
+}
+#custom-microphone.muted {
+  background: @wireplumber-muted-background;
+}
+
+#wireplumber.muted,
+#custom-microphone.muted {
+  color: @workspaces-button-text;
+}
+
+#wireplumber:hover,
+#custom-microphone:hover {
+  color: @workspaces-button-text;
+  background: linear-gradient(45deg, @workspaces-button-background-1, @workspaces-button-background-2);
+}
+

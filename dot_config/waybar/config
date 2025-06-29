@@ -12,7 +12,9 @@
     "modules-center": [
     ],
     "modules-right": [
-      "backlight/slider",
+      "custom/microphone",
+      "wireplumber",
+      "backlight",
       "hyprland/language",
       "battery",
       "clock"
@@ -78,12 +80,46 @@
       "tooltip": false,
       "expand": true
     },
+    "custom/microphone": {
+      "format": "{}",
+      "return-type": "json",
+      "exec": "~/.local/bin/mic_toggle.sh",
+      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+      "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 1%+",
+      "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 1%-",
+      "interval": 1,
+      "tooltip": true
+    },
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
+    },
+    "backlight": {
+    	"device": "intel_backlight",
+    	"format": "{percent}% {icon}",
+    	"format-icons": ["", ""],
+      "min-brightness": 1.0
+    },
     "backlight/slider": {
       "min": 1,
       "max": 100,
       "orientation": "horizontal",
       "device": "intel_backlight",
       "expand": true
+    },
+    "wireplumber": {
+      "format": "{icon}  {volume}%",
+      "format-bluetooth": "󰂰",
+      "nospacing": 1,
+      "tooltip-format": "Volume : {volume}%",
+      "format-muted": "󰝟",
+      "format-icons": {
+          "headphone": "",
+          "default": ["󰖀","󰕾",""]
+      },
+      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+      "scroll-step": 1
     },
     "hyprland/language": {
   	  "format": "   {short}",

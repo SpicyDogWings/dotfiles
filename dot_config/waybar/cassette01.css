@@ -49,6 +49,8 @@
 @define-color backlight-slider-trough-background-2 @workspaces-menu-background-2;
 @define-color backlight-slider-highlight-background-1 @workspaces-button-background-1;
 @define-color backlight-slider-highlight-background-2 @workspaces-button-background-2;
+@define-color backlight-background @color-7;
+@define-color backlight-text @workspaces-menu-text;
 
 @define-color battery-background @color-7;
 @define-color battery-warning-background-1 @color-2;
@@ -59,3 +61,12 @@
 @define-color battery-charging-background-2 @color-4;
 @define-color battery-full-background-1 @color-1;
 @define-color battery-full-background-2 @color-4;
+
+@define-color wireplumber-background @backlight-background;
+@define-color wireplumber-text @backlight-text;
+@define-color wireplumber-muted-background @color-1;
+
+@define-color microphone-background @wireplumber-background;
+@define-color microphone-text @wireplumber-text;
+@define-color microphone-muted-background @wireplumber-muted-background;
+
