@@ -139,3 +139,17 @@ export PATH="$PATH:/home/spacedogwings/.turso"
 
 # Starship
 eval "$(starship init zsh)"
+
+# eza function
+function ez() {
+  if [ -z "$1" ]; then
+    eza --group-directories-first --icons -1
+  else
+    eza --group-directories-first --icons -1 "$@"
+  fi
+}
+
+# bat function
+function bt() {
+    bat --style full --theme base16 "$@"
+}
