@@ -73,11 +73,13 @@
   "features": {
     "edit_prediction_provider": "zed"
   },
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "buffer_font_family": "SpaceMono Nerd Font",
+  "ui_font_family": "Cabinet Grotesk",
   "theme": {
     "mode": "system",
-    "light": "Rosé Pine Moon",
+    "light": "Fleet Light",
     "dark": "Fleet Dark"
   },
   "relative_line_numbers": true
