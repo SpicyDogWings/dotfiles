@@ -17,49 +17,25 @@
     }
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "right"
   },
   "project_panel": {
     "dock": "left"
   },
-  "vim_mode": true,
+  "vim_mode": false,
   "icon_theme": "JetBrains New UI Icons (Dark)",
   "format_on_save": "off",
   "agent": {
-    "profiles": {
-      "write": {
-        "name": "Write",
-        "tools": {
-          "copy_path": true,
-          "create_directory": true,
-          "delete_path": true,
-          "diagnostics": true,
-          "edit_file": true,
-          "fetch": true,
-          "list_directory": true,
-          "move_path": true,
-          "now": true,
-          "find_path": true,
-          "read_file": true,
-          "grep": true,
-          "terminal": true,
-          "thinking": true,
-          "web_search": true,
-          "open": false
-        },
-        "enable_all_context_servers": true,
-        "context_servers": {}
-      }
-    },
     "inline_assistant_model": {
-      "provider": "openrouter",
-      "model": "moonshotai/kimi-k2:free"
+      "provider": "mistral",
+      "model": "codestral-latest"
     },
     "model_parameters": [],
     "default_model": {
-      "provider": "openrouter",
-      "model": "deepseek/deepseek-chat:free"
-    }
+      "provider": "mistral",
+      "model": "codestral-latest"
+    },
+    "version": "2"
   },
   "edit_predictions": {
     "mode": "eager",
@@ -78,7 +54,6 @@
   "theme": {
     "mode": "system",
     "light": "Rosé Pine Moon",
-    "dark": "Fleet Dark"
-  },
-  "relative_line_numbers": true
+    "dark": "Vitesse Black"
+  }
 }

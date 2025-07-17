@@ -1,0 +1,43 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-}": "workspace::ActivateNextPane",
+      "ctrl-{": "workspace::ActivatePreviousPane",
+      "ctrl-]": "pane::ActivateNextItem",
+      "ctrl-[": "pane::ActivatePreviousItem"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+        "space e": "pane::RevealInProjectPanel",
+        "space f": "file_finder::Toggle",
+        "ctrl-b l": "workspace::ToggleLeftDock",
+        "ctrl-b r": "workspace::ToggleRightDock",
+        "space w m": "workspace::ToggleZoom",
+        "space w v": "pane::SplitRight",
+        "space w s": "pane::SplitRight",
+        "space w =": "vim::ResetPaneSizes",
+        "ctrl-alt-h": "vim::ResizePaneRight",
+        "ctrl-alt-l": "vim::ResizePaneLeft",
+        "ctrl-alt-k": "vim::ResizePaneUp",
+        "ctrl-alt-j": "vim::ResizePaneDown"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+        "ctrl-b": null,
+        "ctrl-b l": "workspace::ToggleLeftDock",
+        "ctrl-b r": "workspace::ToggleRightDock"
+    }
+  }
+]
