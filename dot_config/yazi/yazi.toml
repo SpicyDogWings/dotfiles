@@ -1,14 +1,15 @@
 
 [opener]
 edit = [
-    { run = 'kitty fish -c "helix $@"',  orphan = true, for = "unix", desc = "Editar" },
+    { run = 'ghostty --command="helix $@"',  orphan = true, for = "unix", desc = "Editar" },
     { run = 'zeditor $@',  orphan = true, for = "unix", desc = "Editar en zed" },
     { run = 'neovide $@',  orphan = true, for = "unix", desc = "Editar en nvim" }
 ]
 open = [
-    { run = 'kitty fish -c "helix $@/.."', orphan = true, desc = "Abrir", for = "unix" },
-    { run = 'zeditor $@/..', orphan = true, desc = "Abrir en zed", for = "unix" },
-    { run = 'neovide $@/..', orphan = true, desc = "Abrir en neovide", for = "unix" },
-    { run = 'kitty -d $@/..', orphan = true, desc = "Abrir en terminal", for = "unix" },
+    # { run = 'kitty fish -c "helix $@/.."', orphan = true, desc = "Abrir", for = "unix" },
+    { run = 'ghostty --working-directory="$@" --command="helix ."', orphan = true, desc = "Abrir", for = "unix" },
+    { run = 'zeditor .', orphan = true, desc = "Abrir en zed", for = "unix" },
+    { run = 'neovide .', orphan = true, desc = "Abrir en neovide", for = "unix" },
+    { run = 'ghostty --working-directory="$@/.."', orphan = true, desc = "Abrir en terminal", for = "unix" },
     { run = 'nemo $@/..', orphan = true, desc = "Abrir en navegador de archivos", for = "unix" },
 ]
