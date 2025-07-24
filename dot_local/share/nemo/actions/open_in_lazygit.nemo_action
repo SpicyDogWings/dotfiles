@@ -1,8 +1,8 @@
 [Nemo Action]
 Name=Abrir en Lazygit
 Comment=Abrir %D en Lazygit
-Exec=kitty -d %D lazygit
+Exec=ghostty --working-directory="%D" --command="lazygit"
 Icon-Name=term
 Selection=none
 Extensions=dir
-Dependencies=kitty;git;lazygit
+Dependencies=ghostty;git;lazygit

@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Abrir con Helix
+Comment=Abrir %F con Helix
+Exec=ghostty --working-directory="%D" --command="helix %F"
+Icon-Name=Helix
+Selection=s
+Extensions=any
+Dependencies=helix

@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "outline_panel": {
+    "dock": "right"
+  },
   "context_servers": {
     "postgres-context-server": {
       "source": "extension",
@@ -22,10 +25,11 @@
   "project_panel": {
     "dock": "left"
   },
-  "vim_mode": true,
+  "vim_mode": false,
   "icon_theme": "JetBrains New UI Icons (Dark)",
   "format_on_save": "off",
   "agent": {
+    "default_profile": "minimal",
     "profiles": {
       "write": {
         "name": "Write",
@@ -53,12 +57,12 @@
     },
     "inline_assistant_model": {
       "provider": "openrouter",
-      "model": "moonshotai/kimi-k2:free"
+      "model": "deepseek/deepseek-chat-v3-0324:free"
     },
     "model_parameters": [],
     "default_model": {
       "provider": "openrouter",
-      "model": "deepseek/deepseek-chat:free"
+      "model": "deepseek/deepseek-chat-v3-0324:free"
     }
   },
   "edit_predictions": {
@@ -80,7 +84,7 @@
   "theme": {
     "mode": "system",
     "light": "Fleet Light",
-    "dark": "Fleet Dark"
+    "dark": "Nordic"
   },
   "relative_line_numbers": true
 }

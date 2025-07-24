@@ -19,7 +19,8 @@
     "context": "Editor && vim_mode == normal && !menu",
     "bindings": {
         "space e": "pane::RevealInProjectPanel",
-        "space f": "file_finder::Toggle",
+        "space f f": "file_finder::Toggle",
+        "space f g": "pane::DeploySearch",
         "space s s": "outline::Toggle",
         "ctrl-b l": "workspace::ToggleLeftDock",
         "ctrl-b r": "workspace::ToggleRightDock",
