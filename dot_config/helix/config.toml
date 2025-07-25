@@ -1,0 +1,30 @@
+theme = "base16_default_dark"
+
+[editor]
+line-number="relative"
+cursorline=true
+cursorcolumn=false
+continue-comments=false
+true-color=true
+bufferline="always"
+color-modes=true
+popup-border="all"
+[editor.cursor-shape]
+insert="bar"
+normal="block"
+select="underline"
+[editor.file-picker]
+hidden=true
+[editor.statusline]
+left=["mode", "spinner"]
+center=["file-base-name", "file-modification-indicator"]
+right=["version-control", "diagnostics",  "position", "file-type"]
+separator="|"
+mode.normal="NORMAL"
+mode.insert="INSERT"
+mode.select="SELECT"
+diagnostics=["warning", "error"]
+workspace-diagnostics=["warning", "error"]
+[editor.indent-guides]
+render=true
+character="▏"
