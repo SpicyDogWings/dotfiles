@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-night",
+      colorscheme = "kanso",
     },
   },
   {
@@ -14,5 +14,11 @@ return {
   },
   {
     "nyoom-engineering/oxocarbon.nvim",
+  },
+  {
+    "zenbones-theme/zenbones.nvim",
+  },
+  {
+    "webhooked/kanso.nvim",
   },
 }
