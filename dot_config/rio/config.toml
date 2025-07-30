@@ -1,0 +1,50 @@
+#[renderer]
+#filters = [
+#  # load builtin filter
+#  "newpixiecrt",
+#  
+#  # or load your own filter
+#  "/Users/raphael/Downloads/slang-shaders-master/crt/newpixie-crt.slangp"
+#]
+
+confirm-before-quit = false
+padding-x = 20
+padding-y = [20, 10]
+theme = "BlulocoDark"
+
+
+[cursor]
+shape = 'block'
+blinking = true
+blinking-interval = 800
+
+[editor]
+program = "code"
+args = []
+
+[fonts]
+size = 14
+family = "SpaceMono Nerd Font"
+[fonts.regular]
+weight = 400
+
+[hints.rules.action]
+command = "xdg-open"
+
+[navigation]
+use-split = true
+navigation.unfocused-split-opacity = 0.8
+
+[renderer]
+performance = "High"
+backend = "Automatic"
+target-fps = 120
+
+[title]
+content = "{{ PROGRAM }} - {{ ABSOLUTE_PATH }}"
+
+[window]
+opacity = 0.95
+decorations = "enabled"
+blur = true
+windows-corner-preference = "Round"
