@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Abrir en Micro
+Comment=Abrir %D en Micro
+Exec=ghostty --working-directory="%D" --command="micro ."
+Icon-Name=micro
+Selection=none
+Extensions=dir
+Dependencies=micro
