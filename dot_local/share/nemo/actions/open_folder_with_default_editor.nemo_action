@@ -1,0 +1,10 @@
+[Nemo Action]
+
+Name=Abrir folder con Editor
+Comment=Abrir folder con Editor
+Exec=zsh -c "source $HOME/.zshrc && cd %F && $EDITOR ."
+Icon-Name="/home/spacedogwings/Pictures/icons/editor.png"
+Selection=s
+Extensions=dir;
+Terminal=false
+
