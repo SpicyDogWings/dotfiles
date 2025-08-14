@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Youtube Music
+Comment=La version Free y Open Source de Youtube Music
+Exec=/home/wingsunancode/Programs/youtube-music/youtube-music
+Terminal=false
+Icon=/home/wingsunancode/Programs/youtube-music/resources/app.asar.unpacked/assets/youtube-music.svg
+Type=Application

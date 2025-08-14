@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Firefox Developer Edition
+Comment=La version developer de firefox
+Exec=/home/wingsunancode/Programs/firefox/firefox
+Terminal=false
+Icon=/home/wingsunancode/Programs/firefox/browser/chrome/icons/default/default128.png
+Type=Application

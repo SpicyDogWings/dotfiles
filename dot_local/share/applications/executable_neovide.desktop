@@ -3,5 +3,5 @@ Version=0.15.1
 Type=Application
 Terminal=false
 Name=Neovide
-Exec=/home/spacedogwings/.local/share/appimages/neovide.AppImage
-Icon=/home/spacedogwings/Imágenes/icons/editor.png
+Exec=/home/wingsunancode/.local/share/appimages/neovide.AppImage
+Icon=/home/wingsunancode/.local/share/icons/custom/editor.png
