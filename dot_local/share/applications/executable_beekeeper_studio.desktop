@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=5.4.4
+Type=Application
+Terminal=false
+Name=Beekeeper Studio
+Exec=/home/spacedogwings/.local/share/appimages/beekeeper-studio.AppImage
+Icon=/home/spacedogwings/.local/share/icons/custom/db-manager.png
+StartupWMClass=beekeeper-studio
