@@ -1,0 +1,10 @@
+[Nemo Action]
+
+Name=Abrir con Terminal
+Comment=Abrir con Terminal
+Exec=kitty --working-directory=%D
+Icon-Name="/home/spacedogwings/Pictures/icons/editor.png"
+Selection=none
+Extensions=dir;
+Terminal=false
+

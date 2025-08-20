@@ -1,0 +1,10 @@
+[Nemo Action]
+
+Name=Abrir con Editor
+Comment=Abrir con Editor
+Exec=zsh -c "source $HOME/.zshrc && $EDITOR %F"
+Icon-Name="/home/spacedogwings/Pictures/icons/editor.png"
+Selection=s
+Extensions=any;
+Terminal=false
+
