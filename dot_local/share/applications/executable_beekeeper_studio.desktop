@@ -1,8 +1,9 @@
 [Desktop Entry]
-Version=5.4.4
+Version=5.3.4
 Type=Application
 Terminal=false
 Name=Beekeeper Studio
-Exec=/home/spacedogwings/.local/share/appimages/beekeeper-studio.AppImage
-Icon=/home/spacedogwings/.local/share/icons/custom/db-manager.png
+Exec=/home/wingsunancode/.local/share/appimages/Beekeeper-Studio.AppImage
+Icon=/home/wingsunancode/.local/share/icons/custom/db-manager.png
 StartupWMClass=beekeeper-studio
+Comment=Un cliente sql simple
