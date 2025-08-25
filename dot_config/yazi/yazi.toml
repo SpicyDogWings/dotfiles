@@ -1,14 +1,14 @@
 
 [opener]
 edit = [
-  { run = 'neovide $@', orphan = true, for = "unix", desc = "Editar en nvim" },
+  { run = 'fish -c "nvd $@" ', for = "unix", orphan = true, desc = "Editar en nvim" },
   #{ run = 'rio -e helix $@', orphan = true, for = "unix", desc = "Editar" },
   #{ run = 'rio -e micro $@', orphan = true, for = "unix", desc = "Editar en micro" },
   #{ run = 'zeditor $@', orphan = true, for = "unix", desc = "Editar en zed" },
 ]
 open = [
-  { run = 'kitty --working-directory="$@/.."', orphan = true, desc = "Abrir en kitty", for = "unix" },
-  { run = 'neovide .', orphan = true, desc = "Abrir en neovide", for = "unix" },
+  { run = 'kitty --working-directory="$(dirname "$@")"', orphan = true, desc = "Abrir en kitty", for = "unix" },
+  { run = 'fish -c "nvd ."', orphan = true, desc = "Abrir en neovide", for = "unix" },
   { run = 'nemo $@/..', orphan = true, desc = "Abrir en navegador de archivos", for = "unix" },
   #{ run = 'kitty fish -c "helix $@/.."', orphan = true, desc = "Abrir", for = "unix" },
   #{ run = 'ghostty --working-directory="$@" --command="helix ."', orphan = true, desc = "Abrir", for = "unix" },
